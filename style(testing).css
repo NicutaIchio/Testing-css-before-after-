@@ -1,0 +1,43 @@
+body {
+  padding: 40px; 
+}
+
+.container {
+  max-width: 50%;
+}
+
+q {quotes: '\201c' '\201d';}
+
+blockquote {
+  position: relative;
+  float: left;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 10px;
+  font-size: 25pt; 
+
+}
+
+blockquote::before, 
+blockquote::after {
+  position: absolute; 
+  font-size: 50pt; 
+  color: #aaa; 
+}
+blockquote::before {
+  content: '\201c';
+  top: 0px; 
+  left: 0; 
+}
+
+blockquote::after {
+  content: '\201d';
+  bottom: -40px; 
+  right: 0;
+}
+.footer {
+
+ 
+  padding: 20px 0;
+  margin-top: 100px;
+}
